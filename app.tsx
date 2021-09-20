@@ -4,13 +4,13 @@ import algoliasearch from 'algoliasearch';
 
 import '@algolia/autocomplete-theme-classic';
 
-const appId = 'latency';
-const apiKey = '6be0576ff61c053d5f9a3225e2a90f76';
+const appId = 'CSDBX0SZMQ';
+const apiKey = '4bfa904cde10c4036e72bb5ad6a698d4';
 const searchClient = algoliasearch(appId, apiKey);
 
 const querySuggestionsPlugin = createQuerySuggestionsPlugin({
   searchClient,
-  indexName: 'instant_search_demo_query_suggestions',
+  indexName: 'crawler_ta_content',
   getSearchParams() {
     return {
       hitsPerPage: 10,

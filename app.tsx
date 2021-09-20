@@ -34,6 +34,7 @@ autocomplete({
   container: "#autocomplete",
   placeholder: "Search for products",
   detachedMediaQuery: "none",
+  panelPlacement: "full-width",
   getSources({ query }) {
     return [
       {
